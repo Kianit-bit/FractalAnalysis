@@ -19,9 +19,6 @@
     <VisualStudioVersion Condition=" '$(VisualStudioVersion)' == '' ">10.0</VisualStudioVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="autoencoder.py">
-      <SubType>Code</SubType>
-    </Compile>
     <Compile Include="clust_plot.py">
       <SubType>Code</SubType>
     </Compile>
