@@ -26,7 +26,6 @@ from sklearn import metrics
 
 from feature_dist import *
 from clust_plot import *
-from autoencoder import *
 import fuzzy_cmeans as fm
 
 def reduce_features(data, name, n_components=2):

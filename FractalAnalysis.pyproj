@@ -12,6 +12,7 @@
     <ProjectTypeGuids>{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
     <LaunchProvider>Standard Python launcher</LaunchProvider>
     <InterpreterId />
+    <Name>FractalAnalysis</Name>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
   <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
@@ -33,6 +34,7 @@
     <Folder Include="data\" />
     <Folder Include="encoder\" />
     <Folder Include="encoder10\" />
+    <Folder Include="features\" />
     <Folder Include="usc\" />
     <Folder Include="graph\" />
     <Folder Include="images\" />
@@ -52,6 +54,21 @@
     <Content Include="brodatz\4merged.png" />
     <Content Include="brodatz\60merged.png" />
     <Content Include="brodatz\62merged.png" />
+    <Content Include="features\104merged.png.csv" />
+    <Content Include="features\104merged.pngauto.csv" />
+    <Content Include="features\112merged.png.csv" />
+    <Content Include="features\128merged.png.csv" />
+    <Content Include="features\144merged.png.csv" />
+    <Content Include="features\160merged.png.csv" />
+    <Content Include="features\176merged.png.csv" />
+    <Content Include="features\184merged.png.csv" />
+    <Content Include="features\192merged.png.csv" />
+    <Content Include="features\200merged.png.csv" />
+    <Content Include="features\208merged.png.csv" />
+    <Content Include="features\24merged.png.csv" />
+    <Content Include="features\32merged.png.csv" />
+    <Content Include="features\50merged.png.csv" />
+    <Content Include="features\88merged.png.csv" />
     <Content Include="usc\160merged.png" />
     <Content Include="encoder10\104merged.pngauto.csv" />
     <Content Include="encoder10\112merged.pngauto.csv" />
