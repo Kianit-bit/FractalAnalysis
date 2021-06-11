@@ -5,7 +5,6 @@ import math
 import os
 import time
 import pandas as pd
-
 from tqdm import tqdm
 from multiprocessing import Pool
 from scipy.stats import linregress
