@@ -35,10 +35,10 @@
     <Folder Include="encoder\" />
     <Folder Include="encoder10\" />
     <Folder Include="features\" />
+    <Folder Include="result\" />
     <Folder Include="usc\" />
     <Folder Include="graph\" />
     <Folder Include="images\" />
-    <Folder Include="result\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="brodatz\0merged.png" />
