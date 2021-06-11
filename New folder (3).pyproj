@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4a766821-3f81-4aac-b0a8-c3a329046ccf}</ProjectGuid>
+    <ProjectHome />
+    <StartupFile>properties.py</StartupFile>
+    <SearchPath />
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <ProjectTypeGuids>{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
+    <LaunchProvider>Standard Python launcher</LaunchProvider>
+    <InterpreterId />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition=" '$(VisualStudioVersion)' == '' ">10.0</VisualStudioVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="autoencoder.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="clust_plot.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="feature_dist.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="fuzzy_cmeans.py" />
+    <Compile Include="properties.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="brodatz\" />
+    <Folder Include="data\" />
+    <Folder Include="encoder\" />
+    <Folder Include="encoder10\" />
+    <Folder Include="usc\" />
+    <Folder Include="graph\" />
+    <Folder Include="images\" />
+    <Folder Include="result\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="brodatz\0merged.png" />
+    <Content Include="brodatz\10merged.png" />
+    <Content Include="brodatz\111merged.png" />
+    <Content Include="brodatz\144merged.png" />
+    <Content Include="brodatz\165merged.png" />
+    <Content Include="brodatz\181merged.png" />
+    <Content Include="brodatz\183merged.png" />
+    <Content Include="brodatz\194merged.png" />
+    <Content Include="brodatz\26merged.png" />
+    <Content Include="brodatz\28merged.png" />
+    <Content Include="brodatz\4merged.png" />
+    <Content Include="brodatz\60merged.png" />
+    <Content Include="brodatz\62merged.png" />
+    <Content Include="usc\160merged.png" />
+    <Content Include="encoder10\104merged.pngauto.csv" />
+    <Content Include="encoder10\112merged.pngauto.csv" />
+    <Content Include="encoder10\128merged.pngauto.csv" />
+    <Content Include="encoder10\144merged.pngauto.csv" />
+    <Content Include="encoder10\160merged.pngauto.csv" />
+    <Content Include="encoder10\176merged.pngauto.csv" />
+    <Content Include="encoder10\184merged.pngauto.csv" />
+    <Content Include="encoder10\192merged.pngauto %281%29.csv" />
+    <Content Include="encoder10\200merged.pngauto.csv" />
+    <Content Include="encoder10\208merged.pngauto.csv" />
+    <Content Include="encoder10\24merged.pngauto.csv" />
+    <Content Include="encoder10\32merged.pngauto.csv" />
+    <Content Include="encoder10\50merged.pngauto.csv" />
+    <Content Include="encoder10\88merged.pngauto.csv" />
+    <Content Include="encoder\104merged.pngauto %281%29.csv" />
+    <Content Include="encoder\112merged.pngauto.csv" />
+    <Content Include="encoder\128merged.pngauto.csv" />
+    <Content Include="encoder\144merged.pngauto.csv" />
+    <Content Include="encoder\160merged.pngauto.csv" />
+    <Content Include="encoder\176merged.pngauto.csv" />
+    <Content Include="encoder\184merged.pngauto.csv" />
+    <Content Include="encoder\192merged.pngauto.csv" />
+    <Content Include="encoder\200merged.pngauto.csv" />
+    <Content Include="encoder\208merged.pngauto.csv" />
+    <Content Include="encoder\24merged.pngauto.csv" />
+    <Content Include="encoder\32merged.pngauto.csv" />
+    <Content Include="encoder\50merged.pngauto.csv" />
+    <Content Include="encoder\88merged.pngauto.csv" />
+    <Content Include="images\0532.PNG" />
+    <Content Include="images\12gray.jpg" />
+    <Content Include="usc\176merged - Copy.png" />
+    <Content Include="usc\32merged.png" />
+    <Content Include="data\192merged.png" />
+    <Content Include="usc\104merged.png" />
+    <Content Include="usc\208merged.png" />
+    <Content Include="usc\50merged.png" />
+    <Content Include="usc\88merged.png" />
+    <Content Include="usc\salt_192merged.png" />
+    <Content Include="usc\144merged.png" />
+    <Content Include="usc\184merged.png" />
+    <Content Include="usc\200merged.png" />
+    <Content Include="usc\24merged.png" />
+    <Content Include="images\fdsfds.png" />
+    <Content Include="images\31.PNG" />
+    <Content Include="usc\128merged.png" />
+    <Content Include="images\12.jpg" />
+    <Content Include="images\55.PNG" />
+    <Content Include="images\1 %282%29.PNG" />
+    <Content Include="usc\112merged.png" />
+    <Content Include="images\bright.png" />
+    <Content Include="brodatz\1merged.png" />
+    <Content Include="brodatz\72merged.png" />
+    <Content Include="images\contrast.png" />
+    <Content Include="usc\176merged.png" />
+    <Content Include="usc\176merged%282%29.png" />
+    <Content Include="images\form %282%29.png" />
+    <Content Include="images\rotation.png" />
+    <Content Include="scores.txt" />
+    <Content Include="images\size2.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+</Project>

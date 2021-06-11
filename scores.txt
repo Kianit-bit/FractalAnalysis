@@ -1,0 +1,3 @@
+192merged.png  0.9781390771056887
+Mean:0    0.978139
+dtype: float64
