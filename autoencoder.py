@@ -73,7 +73,7 @@ for file_name in onlyfiles:
   ])
   autoencoder = Model(inputs=encoder.input, outputs=decoder(encoder.output))
   autoencoder.compile(loss='mse', optimizer='adam') # 'SGD'
-  model_history = autoencoder.fit(x_train, x_train, epochs=60, batch_size=32, verbose=0) #5000
+  model_history = autoencoder.fit(x_train, x_train, epochs=100, batch_size=32, verbose=0) #5000
   #plt.plot(model_history.history["loss"])
   #plt.title("Loss vs. Epoch")
   #plt.ylabel("Loss")
