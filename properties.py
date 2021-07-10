@@ -279,13 +279,6 @@ def Calc(filename, eps, rgb_or_hsv='rgb'):
   piece_integ_sum = []
   integ_sum = integral_sum(immat)
 
-  #########################
-  #print("sum of brightness 1: ", integ_sum[528,528] + integ_sum[0,0] - integ_sum[0,528]-integ_sum[528,0])
-  #print("sum of brightness 2: ", integ_sum[528,1055] + integ_sum[0,528] - integ_sum[528,528]-integ_sum[0,1055])
-  #print("sum of brightness 3: ", integ_sum[1055,528] + integ_sum[528,0] - integ_sum[1055,0]-integ_sum[528,528])
-  #print("sum of brightness 4: ", integ_sum[1055,1055] + integ_sum[528,528] - integ_sum[1055,528]-integ_sum[528,1055])
-  #########################
-
   for part in parts:
     start_x, start_y = part
     piece_integ_sum.append(integ_sum[start_y:start_y+eps, start_x:start_x+eps])
@@ -312,21 +305,13 @@ if __name__ == '__main__':
         #get features
         eps = 24
         mfs_arr, renie_arr, parts = Calc(elem, eps, 'rgb')
-        describe(mfs_arr, renie_arr, elem, parts)
-        #distrib_plot(preprocessing.scale(mfs_arr), elem, parts)
-        #distrib_plot(mfs_arr, elem, parts)      
+        describe(mfs_arr, renie_arr, elem, parts)   
         print("num_of_parts: ", np.array(mfs_arr).shape[0])
         ##scale and tsne
         t1_start = time.perf_counter()  
         stacked = np.hstack((mfs_arr, renie_arr))
         stacked = preprocessing.scale(stacked)
-        #parts = pd.read_csv('parts.csv').values 
-        #stacked = pd.read_csv('data/'+elem).values 
-        #pd.DataFrame(stacked).to_csv(elem+'.csv', index=False)
-        #stacked = reduce_features(stacked, 'pca')
         stacked = reduce_features(stacked, 'tsne', 2)
-        #stacked = reduce_features(stacked, 'FA', 5)
-        #distrib_plot(stacked, elem, parts)
         t2_start = time.perf_counter() 
         print("scale+tsne: ", int(t2_start - t1_start)//60, "min", (t2_start - t1_start) % 60, "sec")
 
@@ -349,9 +334,4 @@ if __name__ == '__main__':
     with open('scores.txt', 'a+') as f:
         f.write("Mean:")
         f.write("%s\n" % pd.DataFrame(adj_scores).mean())
-
-
-
-
-
-
+	
